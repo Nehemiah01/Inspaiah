@@ -114,7 +114,6 @@ body {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 1.5fr 2fr 1fr;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Source Sans Pro', sans-serif;
 }
 .team {
@@ -188,6 +187,10 @@ figure {
 .team figure:nth-of-type(4) {
     animation-delay: 15s;
 }
+/* .posts {
+    padding: 0;
+    margin: 0;
+} */
 .posts h3 {
     padding: 2rem;
     text-align: center;
@@ -198,12 +201,24 @@ figure {
 }
 .posts ul li {
     display: -webkit-box;
+    display: block;
     background-color: #aff5b4;
     background-color: var(--cool-color);
     color: var(--dark-grey);   
     padding: 1rem 0.7rem;
+    padding: 0;
     border-radius: 0.5rem;
     max-height: 8rem;
+    overflow: hidden;
+}
+.topic {
+    display: block;
+    text-align: center;
+    background-color: #002a36;
+    font-weight: 550;
+}
+.posts ul li p {
+    margin: 1rem 0.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 7;
@@ -299,9 +314,9 @@ footer {
     #header-nav .active, #header-nav .last {
         color: var(--dark-grey);
         color: #1b1f23;
+        color: #f0f2f2;
         background: none;
         border-color: none;
-        /* color: #eee; */
     }
     #header-nav a:hover, #header-nav .last:hover {
         color: var(--cool-color);
@@ -323,6 +338,7 @@ footer {
     }
     #header-nav a {
         color: #1b1f23;
+        color: #f0f2f2;
         /* color: #eee; */
         margin: auto;
         padding: 1rem 0;
