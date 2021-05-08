@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap'); */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
@@ -15,9 +15,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    /* font-family: 'Montserrat', sans-serif; */
-    /* font-family: 'Roboto', sans-serif; */
 }
 a {
     text-decoration: none;
@@ -37,9 +34,6 @@ body {
     padding: 1rem 3.5rem;
     background-color: #fff;
     align-items: center;
-}
-#header-nav ul {
-    /* width: 40%; */
 }
 #header-nav .navbar-links {
     display: inline;
@@ -166,15 +160,6 @@ figure {
     92% { opacity: 0; }
     100% { opacity: 1; }
 }
-/* @keyframes change {
-    0% { opacity: 0; }
-    5% { opacity: 1; }
-    10% { opacity: 1; }
-    15% { opacity: 1; }
-    20% { opacity: 1; }
-    25% {opacity: 0;}
-    100% { opacity: 0; }
-} */
 .team figure:nth-of-type(1) {
     animation-delay: 0s;
 }
@@ -223,9 +208,7 @@ figure {
 aside {
     font-family: 'Source Sans Pro', sans-serif;
     padding: 1rem;
-    /* background-color: #ffc680; */
     background-color: #eee;
-    /* background-color: rgb(236, 236, 236); */
     border-color: var(--dark-grey);
     border-radius: 10px;
     border: #aff5b4 solid 2px;
@@ -264,7 +247,6 @@ footer {
     margin: 2rem;
     font-weight: 400;
     flex-basis: 33.3%;
-    /* order: 1; */
 }
 .contact {
     margin: 1rem auto;
@@ -324,7 +306,6 @@ footer {
     }
     #header-nav .navbar-links {
         background: var(--cool-color);
-        /* background: #0b0b0b; */
         position: absolute;
         display: grid;
         width: 100%;
@@ -336,7 +317,6 @@ footer {
     #header-nav a {
         color: #1b1f23;
         color: #f0f2f2;
-        /* color: #eee; */
         margin: auto;
         padding: 1rem 0;
         text-align: center;
@@ -359,7 +339,6 @@ footer {
         display: block;
         color: var(--dark-grey);
         cursor: pointer;
-        /* border-radius: 30%; */
         transition: transform 0.3s ease-out;
     }
     .hamburger-menu.cancel .bar:first-child {
