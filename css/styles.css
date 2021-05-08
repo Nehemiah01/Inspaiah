@@ -47,7 +47,7 @@ body {
 }
 #header-nav a {
     color: black;
-    padding: 0 0.7rem;
+    padding: 0 0.7rem 0.3rem 0.7rem;
     border-radius: 50px;
     text-align: center;
 }
@@ -187,10 +187,6 @@ figure {
 .team figure:nth-of-type(4) {
     animation-delay: 15s;
 }
-/* .posts {
-    padding: 0;
-    margin: 0;
-} */
 .posts h3 {
     padding: 2rem;
     text-align: center;
@@ -201,14 +197,14 @@ figure {
 }
 .posts ul li {
     display: -webkit-box;
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
     background-color: #aff5b4;
     background-color: var(--cool-color);
     color: var(--dark-grey);   
     padding: 1rem 0.7rem;
     padding: 0;
     border-radius: 0.5rem;
-    max-height: 8rem;
     overflow: hidden;
 }
 .topic {
@@ -328,6 +324,7 @@ footer {
     }
     #header-nav .navbar-links {
         background: var(--cool-color);
+        /* background: #0b0b0b; */
         position: absolute;
         display: grid;
         width: 100%;
