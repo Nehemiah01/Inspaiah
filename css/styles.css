@@ -306,7 +306,8 @@ footer {
         padding: 0;
     }
     #header-nav .navbar-links {
-        background: var(--cool-color);
+        /* background: var(--cool-color); */
+        background: rgba(13, 17, 23, 0.9);
         position: absolute;
         display: grid;
         width: 100%;
