@@ -292,14 +292,14 @@ footer {
 @media screen and (max-width: 767px) {
     #header-nav .active, #header-nav .last {
         color: var(--dark-grey);
-        color: #1b1f23;
-        color: #f0f2f2;
+        color: rgba(255, 255, 255, 0.65);
         background: none;
-        border-color: none;
     }
     #header-nav a:hover, #header-nav .last:hover {
         color: var(--cool-color);
-        background: #eee;
+        color: #fff;
+        border: none;
+        /* background: #eee; */
     }
     #header-nav {
         position: relative;
@@ -319,11 +319,12 @@ footer {
     #header-nav a {
         color: #1b1f23;
         color: #f0f2f2;
+        color: rgba(255, 255, 255, 0.65);
         margin: auto;
         padding: 1rem 0;
         text-align: center;
         margin: 0;
-        transition: background 0.3s ease-in-out;
+        transition: background, color 0.3s ease-in-out;
         width: 100%;
         border-radius: 0;
     }
