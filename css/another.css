@@ -306,33 +306,31 @@ footer {
         padding: 0;
     }
     #header-nav .navbar-links {
-        /* background: var(--cool-color); */
         background: rgb(13, 17, 23);
-        position: absolute;
+        background: var(--cool-color);
+        position: fixed;
         display: grid;
+        clip-path: circle(20px at 92% -10%);
+        -webkit-clip-path: circle(20px at 92% -10%);
         width: 100%;
+        height: 60vh;
         top: 4rem;
-        left: -100%;
-        transition: 0.7s ease-in-out;
+        transition: 1s ease-in-out;
         will-change: transform;
+    }
+    #header-nav .navbar-links.display {
+        clip-path: circle(765px at 92% -10%);
+        -webkit-clip-path: circle(765px at 92% -10%);
     }
     #header-nav a {
         color: #1b1f23;
         color: #f0f2f2;
         color: rgb(255, 255, 255);
         margin: auto;
-        padding: 1rem 0;
         text-align: center;
-        margin: 0;
         transition: background, color 0.3s ease-in-out;
         width: 100%;
         border-radius: 0;
-    }
-    #header-nav .navbar-links.nav-active {
-        left: 0;
-        opacity: 1;
-        transition: ease-in 0.5s all;
-        will-change: transform;
     }
     .logo {
         padding: 0.5rem 3.5rem;
