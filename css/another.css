@@ -309,7 +309,7 @@ footer {
         -webkit-clip-path: circle(810px at 92% -10%);
     }
     .top-body {
-        transition: filter, opacity 1.5s ease-in-out;
+        /* transition: filter, opacity 1.5s ease-in-out; */
     }
     .top-body.blur {
         filter: blur(1px);
