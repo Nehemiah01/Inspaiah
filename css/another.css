@@ -37,11 +37,10 @@ body {
 }
 #header-nav .navbar-links {
     display: inline;
-    font-weight: 600;
+    font-weight: 450;
 }
 #header-nav a {
     color: black;
-    padding: 0 0.7rem 0.3rem 0.7rem;
     padding: 0.25rem 0.7rem;
     border-radius: 50px;
     text-align: center;
@@ -188,8 +187,6 @@ figure {
     background-color: #aff5b4;
     background-color: var(--cool-color);
     color: var(--dark-grey);   
-    padding: 1rem 0.7rem;
-    padding: 0;
     border-radius: 0.5rem;
     overflow: hidden;
 }
@@ -201,10 +198,6 @@ figure {
 }
 .posts ul li p {
     margin: 1rem 0.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 7;
-    -webkit-box-orient: vertical;
 }
 aside {
     font-family: 'Source Sans Pro', sans-serif;
@@ -212,7 +205,6 @@ aside {
     background-color: #eee;
     border-color: var(--dark-grey);
     border-radius: 10px;
-    border: #aff5b4 solid 2px;
     border: var(--cool-color) solid 2px;
     text-transform: uppercase;
     font-weight: 600;
@@ -225,15 +217,12 @@ aside h3 {
 }
 aside ul li {
     padding: 0.5rem;
-    border-bottom: #aff5b4 solid 2px;
     border-bottom: var(--cool-color) solid 2px;
-
 }
 footer {
     color: #f0f0f0f5;
     background-color: var(--general-color);
-    padding: 3.5rem;
-    padding-top: 2rem;
+    padding: 2rem 3.5rem 3.5rem 3.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
@@ -291,42 +280,45 @@ footer {
 
 @media screen and (max-width: 767px) {
     #header-nav .active, #header-nav .last {
-        color: var(--dark-grey);
-        color: rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 0.6);
         background: none;
     }
     #header-nav a:hover, #header-nav .last:hover {
-        color: var(--cool-color);
-        color: #fff;
+        color: rgb(255, 255, 255);
         border: none;
-        /* background: #eee; */
-    }
+    }   
     #header-nav {
         position: relative;
         padding: 0;
     }
     #header-nav .navbar-links {
-        background: rgb(13, 17, 23);
-        background: var(--cool-color);
-        position: fixed;
+        background: black;
+        position: absolute;
         display: grid;
         clip-path: circle(20px at 92% -10%);
         -webkit-clip-path: circle(20px at 92% -10%);
         width: 100%;
-        height: 60vh;
         top: 4rem;
-        transition: 1s ease-in-out;
+        transition: 1.5s ease-in-out;
         will-change: transform;
+        padding: 1rem 0;
+        z-index: 2;
     }
     #header-nav .navbar-links.display {
-        clip-path: circle(765px at 92% -10%);
-        -webkit-clip-path: circle(765px at 92% -10%);
+        clip-path: circle(810px at 92% -10%);
+        -webkit-clip-path: circle(810px at 92% -10%);
+    }
+    .top-body {
+        transition: filter 1.5s ease-in-out;
+    }
+    .top-body.blur {
+        filter: blur(4px);
     }
     #header-nav a {
-        color: #1b1f23;
-        color: #f0f2f2;
-        color: rgb(255, 255, 255);
+        color: rgba(255, 255, 255, 0.6);
         margin: auto;
+        padding: 0.7rem 0; 
+        margin-bottom: none;
         text-align: center;
         transition: background, color 0.3s ease-in-out;
         width: 100%;
@@ -386,6 +378,19 @@ footer {
         place-items: center;
         justify-content: start;
         height: unset;
+    }
+    #header-nav a, #header-nav .active, #header-nav .last {
+        color: rgb(255, 255, 255);
+    }
+    #header-nav .navbar-links {
+        transition: 1s ease-in-out;
+    }
+    #header-nav .navbar-links.display {
+        clip-path: circle(810px at 92% -10%);
+        -webkit-clip-path: circle(510px at 92% -10%);
+    }
+    .top-body {
+        transition: filter 1s ease-in-out;
     }
     .top-body .my-svg img {
         width: 80vw;
