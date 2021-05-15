@@ -309,10 +309,13 @@ footer {
         -webkit-clip-path: circle(810px at 92% -10%);
     }
     .top-body {
-        transition: filter 1.5s ease-in-out;
+        transition: filter, opacity 1.5s ease-in-out;
     }
     .top-body.blur {
-        filter: blur(4px);
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+        -moz-o-filter: blur(1px);
+        -ms-filter: blur(1px);
     }
     #header-nav a {
         color: rgba(255, 255, 255, 0.6);
