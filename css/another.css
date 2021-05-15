@@ -393,7 +393,7 @@ footer {
         -webkit-clip-path: circle(510px at 92% -10%);
     }
     .top-body {
-        transition: filter 1s ease-in-out;
+        /* transition: filter 1s ease-in-out; */
     }
     .top-body .my-svg img {
         width: 80vw;
