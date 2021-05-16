@@ -309,13 +309,10 @@ footer {
         -webkit-clip-path: circle(810px at 92% -10%);
     }
     .top-body {
-        /* transition: filter, opacity 1.5s ease-in-out; */
+        transition: opacity 1.5s ease-in-out;
     }
     .top-body.blur {
-        filter: blur(1px);
-        -webkit-filter: blur(1px);
-        -moz-o-filter: blur(1px);
-        -ms-filter: blur(1px);
+        opacity: 0.5;
     }
     #header-nav a {
         color: rgba(255, 255, 255, 0.6);
@@ -391,9 +388,6 @@ footer {
     #header-nav .navbar-links.display {
         clip-path: circle(810px at 92% -10%);
         -webkit-clip-path: circle(510px at 92% -10%);
-    }
-    .top-body {
-        /* transition: filter 1s ease-in-out; */
     }
     .top-body .my-svg img {
         width: 80vw;
