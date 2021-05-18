@@ -44,13 +44,11 @@ body {
     padding: 0.25rem 0.7rem;
     border-radius: 50px;
     text-align: center;
+    font-weight: 500;
 }
 #header-nav a:hover {
     color: var(--cool-color);
     transition: all 0.5s ease-out;
-}
-#header-nav .active {
-    color: var(--cool-color);
 }
 #header-nav .last {
     background: var(--cool-color);
@@ -58,7 +56,7 @@ body {
 }
 #header-nav .last:hover {
     background: transparent;
-    color: var(--dark-grey);
+    color: var(--cool-color);
     border: var(--cool-color) solid 1px;
     transition: all 0.5s ease-out;
 }
@@ -187,7 +185,7 @@ figure {
     background-color: #aff5b4;
     background-color: var(--cool-color);
     color: var(--dark-grey);   
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     overflow: hidden;
     color: hsl(0, 0%, 95%);
 }
@@ -195,10 +193,11 @@ figure {
     display: block;
     text-align: center;
     background-color: #002a36;
+    padding: 0.5rem;
     font-weight: 550;
 }
 .posts ul li p {
-    margin: 1rem 1.5rem;
+    padding: 0rem 1.5rem;
 }
 aside {
     font-family: 'Source Sans Pro', sans-serif;
@@ -280,7 +279,7 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    #header-nav .active, #header-nav .last {
+    #header-nav .last {
         color: rgba(255, 255, 255, 0.6);
         background: none;
     }
@@ -380,11 +379,11 @@ footer {
         justify-content: start;
         height: unset;
     }
-    #header-nav a, #header-nav .active, #header-nav .last {
+    #header-nav a, #header-nav .last {
         color: rgb(255, 255, 255);
     }
     #header-nav .navbar-links {
-        transition: 1s ease-in-out;
+        transition: 1.5s ease-in-out;
     }
     #header-nav .navbar-links.display {
         clip-path: circle(810px at 92% -10%);
