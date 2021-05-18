@@ -7,6 +7,7 @@
 :root {
     --general-color: rgb(13, 17, 23);
     --cool-color: rgb(0, 136, 169);
+    --cool-color: #3d72a4;
     --dark-grey: #111;
 }
 
@@ -178,29 +179,31 @@ figure {
 }
 .posts ul {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
+    
 }
 .posts ul li {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
-    background-color: #aff5b4;
-    /* filter: blur(25px); */
-    background-color: rgba(0, 136, 169, 0.9);
-    color: var(--dark-grey);   
+    background-color: var(--dark-grey);
     border-radius: 1rem;
+    box-sizing:border-box;
     overflow: hidden;
     color: hsl(0, 0%, 95%);
+    box-shadow: -5px 10px 8px rgba(170, 170, 170)
+                /*-5px 0px 8px var(--dark-grey)*/;
 }
 .topic {
     display: block;
     text-align: center;
-    background-color: rgb(0, 42, 54);
+    background-color: var(--cool-color);
     padding: 0.5rem;
     font-weight: 550;
 }
 .posts ul li p {
-    padding: 0rem 1.5rem;
+    padding: 0 1.5rem;
+    box-sizing:content-box;
     /* backdrop-filter: blur(20px); */
 }
 aside {
@@ -212,7 +215,7 @@ aside {
     box-shadow: -5px 10px 8px rgba(220, 220, 220) ;
     text-transform: uppercase;
     font-weight: 600;
-    margin: 2rem 1.3rem 1.3rem auto;
+    margin: 2rem 1.3rem 0 auto;
     /* margin-bottom: 0; */
 }
 aside h3 {
