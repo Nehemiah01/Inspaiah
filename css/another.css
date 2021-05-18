@@ -78,7 +78,7 @@ body {
     grid-template-columns: 45% 55%;
     grid-gap: 1rem;
     color: #fff;
-    height: calc(100vh - 15rem);
+    min-height: calc(100vh - 15rem);
     overflow: hidden;
 }
 .middle {
@@ -191,8 +191,7 @@ figure {
     box-sizing:border-box;
     overflow: hidden;
     color: hsl(0, 0%, 95%);
-    box-shadow: -5px 10px 8px rgba(170, 170, 170)
-                /*-5px 0px 8px var(--dark-grey)*/;
+    box-shadow: -5px 10px 8px rgba(170, 170, 170);
 }
 .topic {
     display: block;
