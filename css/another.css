@@ -69,7 +69,7 @@ body {
     width: 26px;
     height: 3px;
     border-radius: 5px;
-    margin: 5px 1.5rem;
+    margin: 5px 2rem;
     background-color: var(--dark-grey);
 }
 .top-body{
@@ -173,7 +173,7 @@ figure {
     animation-delay: 15s;
 }
 .posts h3 {
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     text-align: center;
 }
 .posts ul {
@@ -183,12 +183,13 @@ figure {
 .posts ul li {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 7;
+    -webkit-line-clamp: 5;
     background-color: #aff5b4;
     background-color: var(--cool-color);
     color: var(--dark-grey);   
     border-radius: 0.5rem;
     overflow: hidden;
+    color: hsl(0, 0%, 95%);
 }
 .topic {
     display: block;
@@ -197,7 +198,7 @@ figure {
     font-weight: 550;
 }
 .posts ul li p {
-    margin: 1rem 0.5rem;
+    margin: 1rem 1.5rem;
 }
 aside {
     font-family: 'Source Sans Pro', sans-serif;
@@ -205,7 +206,7 @@ aside {
     background-color: #eee;
     border-color: var(--dark-grey);
     border-radius: 10px;
-    border: var(--cool-color) solid 2px;
+    box-shadow: -5px 10px 8px rgba(220, 220, 220) ;
     text-transform: uppercase;
     font-weight: 600;
     margin: 1.3rem;
@@ -275,7 +276,7 @@ footer {
 }
 .inspaiah {
     font-size: 2rem;
-    font-family: 'Rancho';
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media screen and (max-width: 767px) {
@@ -325,7 +326,7 @@ footer {
         border-radius: 0;
     }
     .logo {
-        padding: 0.5rem 3.5rem;
+        padding: 0.5rem 2rem;
         width: 3rem;
     }
     .hamburger-menu .bar {
